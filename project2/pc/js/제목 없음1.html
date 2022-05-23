@@ -1,0 +1,274 @@
+<table class="paper_info_m mobile">
+	<tbody>
+		<tr>
+			<td class="td_tit">Paper Title</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" class="paper_tit">
+			</td>
+		</tr>
+		<tr>
+			<td class="td_tit">Paper Subject</td>
+		</tr>
+		<tr>
+			<td>
+				<select class="w20">
+					<option>Select</option>
+					<option>EMI/EMC/EMP</option>
+					<option>EM Theory & Computational EM</option>
+					<option>Microwave/mmWave Passive Circuits</option>
+					<option>Microwave/mmWave Active Circuits</option>
+					<option>EM Components and Materials</option>
+					<option>Radio Wave Propagation & Scattering</option>
+					<option>Antenna Theory & Design</option>
+					<option>THz/Optical Systems & Components</option>
+					<option>IoT & Sensor Network</option>
+					<option>Radar & Remote Sensing</option>
+					<option>CR/SDR</option>
+					<option>EM Bio-effects & EMF</option>
+					<option>Biomedical Applications</option>
+					<option>Satellite and Cosmic Radio Waves</option>
+					<option>Wireless Communication Systems</option>
+					<option>Radio & Broadcasting Policies/Standards</option>
+					<option>EM Measurement</option>
+					<option>Wireless Power Transfer & Energy Harvesting</option>
+					<option>Electronic Warfare & EM Security</option>
+					<option>Broadcasting Technologies/Applications</option>
+					<option>Emerging Technologies (B5G, AI, Deep Learning, etc.)</option>
+					<option> 
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="td_tit">Preferred presentation type</td>
+		</tr>
+		<tr>
+			<td>
+				<label style="padding:0 10px;">
+					<input type="radio" value="" name="speach" class="oral"><span class="radio_txt">Oral</span>
+				</label>
+				<br class=m_control>
+				<label style="padding:0 10px;">
+					<input type="radio" value="" name="speach" class="toPoster"><span class="radio_txt">Poster</span>
+				</label>
+				<br class=m_control>
+				<label style="padding:0 10px;">
+					<input type="radio" value="" name="speach" class="both"><span class="radio_txt">Either type is OK</span>
+				</label>
+			</td>
+		</tr>
+		<tr>
+			<td class="td_tit">Online/offline selection</td>
+		</tr>
+		<tr>
+			<td>
+				<label style="padding:0 10px;">
+					<input type="radio" value="" name="on_off" class=""><span class="radio_txt">Online <br class="m_control"><span class="radio_txt2">(pre-recorded video)</span></span>
+				</label>
+				<br class=m_control>
+				<label style="padding:0 10px;">
+					<input type="radio" value="" name="on_off" class=""><span class="radio_txt">Offline <br class="m_control"><span class="radio_txt2">(on-site presentation)</span></span>
+				</label>
+			</td>
+		</tr>
+		<tr>
+			<td class="td_tit"> Papers</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" class="papers w75">
+				<button onclick="$(this).next().trigger('click');" class="file_btn">FILE</button>
+				<input type="file">
+				<p>Paper upload</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="td_tit">Copyright transfer agreement</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" class="check_box"><span class="check_txt"> (The authors hereby agree that KIEES holds the copyright of the published paper.)</span>
+			</td>
+		</tr>
+	</tbody>
+
+</table>
+
+<table class="athuor_m mobile">
+	<tbody>
+		<tr style="margin-top:50px;">
+			<td class="td_tit">Author list</td>
+		</tr>
+		<tr>
+			<td>
+				<p style="font-size:13px;font-weight:500;color:#e7505a; margin-bottom:5%;">Please register all the authors of the paper<br> and indicate the lead author(s) of the paper.</p>
+				<div class="author_list_top">
+					<div class="al_align">
+						<button type="button"><</button>
+						<button type="button">></button>
+					</div>
+					<div class="al_box">
+						<ul>
+							<li>1</li>
+							<li>1</li>
+							<li>1</li>
+							<li>1</li>
+							<li>[Lead author : <input type="checkbox">]</li>
+						</ul>
+					</div>
+				</div>
+				<div class="author_list">
+					<ul>
+						<li class="w30">
+							<label>Name</label>
+							<input type="text" style="width:100%">
+						</li>
+						<li class="w30">
+							<label>Affiliation</label>
+							<input type="text" style="width:100%">
+						</li>
+						<li class="w30">
+							<label>E-mail</label>
+							<input type="text" style="width:100%">
+						</li>
+						<li><button class="plus_btn"style="background-color: #26a6a8">+</button></li>
+					</ul>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<script>
+	$(".plus_btn").click(function(e){
+		e.preventDefault();
+		$(".author_list_top").css({display:"block"});
+	});
+</script>
+
+<div class="formview_tit">
+	Lead author information
+</div>
+
+<table class="author_info_m mobile">
+	<tr>
+		<td class="td_tit">Name</td>
+	</tr>
+	<tr>
+		<td >
+			<input type="text" class="w40">
+		</td>
+	</tr>
+	<tr>
+		<td class="td_tit">Affiliation</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="text" class="w40">
+		</td>
+	</tr>
+	<tr>
+		<td class="td_tit">Affiliation type</td>
+	</tr>
+	<tr>
+		<td>
+			<label style="padding:0 10px;">
+				<input type="radio"><span style="margin-left:5px">Academia</span>
+			</label>
+			<br class="m_control">
+			<label style="padding:0 10px;">
+				<input type="radio"><span style="margin-left:5px">Research Institute   </span>
+			</label>
+			<br class="m_control">
+			<label style="padding:0 10px;">
+				<input type="radio"><span style="margin-left:5px">Industry</span>
+			</label>
+			<br class="m_control">
+			<label style="padding:0 10px;">
+				<input type="radio"><span style="margin-left:5px">Government agency </span>
+			</label>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_tit">E-mail</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="text" class="w150p first_row">@<input type="text" class="w150p">
+			<select class="w150p">
+				<option value="naver.com" data="naver.com">naver.com</option>
+				<option value="nate.com" data="nate.com">nate.com</option>
+				<option value="yahoo.co.kr" data="yahoo.co.kr">yahoo.co.kr</option>
+				<option value="gmail.com" data="gmail.com">gmail.com</option>
+				<option value="paran.com" data="paran.com">paran.com</option>
+				<option value="hanmail.net" data="hanmail.net">hanmail.net</option>
+				<option value="hotmail.com" data="hotmail.com">hotmail.com</option>
+				<option selected="" value="" data="Input">Input</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_tit">Phone number</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="text" class="w80p">-<input type="text" class="w80p">-<input type="text" class="w80p">
+		</td>
+	</tr>
+</table>
+
+<div class="formview_tit" style="margin-bottom:0">
+	Advisor information (if submitted by students)
+</div>
+<div class="check" style="text-align:right;margin:0 10px 15px 0;">
+	<label>
+		<input type="checkbox" ><span style="margin-left:5px">N/A</span>
+	</label>
+</div>
+<table class="advisor_info_m mobile">
+	<tr>
+		<td class="td_tit">Name</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="text" class="w40">
+		</td>
+	</tr>
+	<tr>
+		<td class="td_tit">Affiliation</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="text" class="w40">
+		</td>
+	</tr>
+	<tr>
+		<td class="td_tit">E-mail</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="text" class="w150p first_row">@<input type="text" class="w150p">
+			<select class="w150p">
+				<option value="naver.com" data="naver.com">naver.com</option>
+				<option value="nate.com" data="nate.com">nate.com</option>
+				<option value="yahoo.co.kr" data="yahoo.co.kr">yahoo.co.kr</option>
+				<option value="gmail.com" data="gmail.com">gmail.com</option>
+				<option value="paran.com" data="paran.com">paran.com</option>
+				<option value="hanmail.net" data="hanmail.net">hanmail.net</option>
+				<option value="hotmail.com" data="hotmail.com">hotmail.com</option>
+				<option selected="" value="" data="Input">Input</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_tit">Phone number</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="text" class="w80p">-
+			<input type="text" class="w80p">-
+			<input type="text" class="w80p">
+		</td>
+	</tr>
+</table>

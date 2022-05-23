@@ -1,0 +1,91 @@
+	<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>project1 settings</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="asset/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="asset/js/jquery.min.js"></script>
+<script src="asset/js/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+	<header id="header">
+	<div class="top">
+		<div class="tab" style="background-color:#f00">
+			<a href="">
+				<span></span>
+			</a>
+		</div>
+	</div>
+	</header>
+	<div class="menu">
+		<nav id="gnb" style="left:-291px;">
+			<ul>
+				<li>
+					<a href="">About SFF</a>
+					<ul>
+						<li><a href="">About</a></li>
+						<li><a href="">서울프린지페스티벌2021</a></li>
+						<li><a href="">페스티벌공간</a></li>
+						<li><a href="">만든는 사람들</a></li>
+						<li><a href="">아카이브</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">페스티벌 가이드</a>
+					<ul>
+						<li><a href="">현장가이드</a></li>
+						<li><a href="">자주하는 질문</a></li>
+						<li><a href="">오시는 길</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#ticket">티켓구매</a>
+					<ul>
+						<li><a href="">티켓구매 바로가기</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#comunity">커뮤니티</a>
+					<ul>
+						<li><a href="">공지사항</a></li>
+						<li><a href="">뉴스레터</a></li>
+						<li><a href="">현장스케치</a></li>
+						<li><a href="">페스티벌 사진</a></li>
+						<li><a href="">언론 속 프린지</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#donate">후원하기</a>	
+					<ul>
+						<li><a href="">프린지 후원하기</a></li>
+						<li><a href="">함께한 사람들</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="dim"></div>
+	<script>
+		var tab=document.getElementsByClassName('tab');
+		var menu=document.getElementById('gnb');
+
+		tab[0].addEventListener('click',function(e){
+			e.preventDefault();
+			//
+			menu.style.left=0 + 'px'
+			
+			
+		});
+	</script>
+</body>
+</html>	
+		
+		
+		
